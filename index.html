@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Content Cluster Predictor</title>
+</head>
+<body>
+    <h1>Netflix Content Cluster Predictor</h1>
+    <form action="/predict" method="post">
+        <label>Release Year:</label>
+        <input type="number" name="release_year" required><br><br>
+        
+        <label>Type:</label>
+        <select name="is_tv_show">
+            <option value="0">Movie</option>
+            <option value="1">TV Show</option>
+        </select><br><br>
+        
+        <label>Genres:</label><br>
+        <input type="checkbox" name="genres" value="Drama"> Drama<br>
+        <input type="checkbox" name="genres" value="Comedy"> Comedy<br>
+        <!-- Add more genres as needed -->
+        
+        <button type="submit">Predict Cluster</button>
+    </form>
+</body>
+</html>
